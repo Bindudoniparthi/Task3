@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Vegetables</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+<header>
+    <nav id="navbar">
+        <div class="logo">
+            <h1>Fresh Vegetables</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+            <li><a href="#menu">Menu</a></li>
+        </ul>
+    </nav>
+</header>
+
+    
+    <!-- Home Section -->
+<section id="home" class="home">
+    <div class="home-content">
+        <h1>Welcome to Fresh Vegetables</h1>
+        <p>Discover the freshness and health benefits of our garden-picked vegetables. Learn, explore, and enhance your knowledge about the best nature has to offer.</p>
+        <a href="#menu" class="cta-button">Explore Our Menu</a>
+    </div>
+</section>
+
+
+    <!-- Menu Section -->
+<section id="menu" class="menu">
+    <h2>Our Vegetable Menu</h2>
+    <div class="menu-items">
+        <div class="menu-item">
+            <img src="https://gourmetgarden.in/cdn/shop/products/Carrot_1280x.jpg?v=1704281309" alt="Carrots" class="menu-img">
+            <p>Carrots - Fresh and Crunchy</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2020/8/TT/EU/TN/106270270/spinach.png" alt="Spinach" class="menu-img">
+            <p>Spinach - High in Iron</p>
+        </div>
+        <div class="menu-item">
+            <img src="broccoli.jpg" alt="Broccoli" class="menu-img">
+            <p>Broccoli - A Superfood</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://organicbazar.net/cdn/shop/files/Cucumber_American_Black_F1_Hybrid_Seeds.jpg?v=1719231254" alt="Cucumbers" class="menu-img">
+            <p>Cucumbers - Refreshing and Hydrating</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://fedbythefarm.com/wp-content/uploads/2023/03/fresh-whole-beets.jpg" alt="Beets" class="menu-img">
+            <p>Beets - Perfect for Salads</p>
+        </div>
+    </div>
+</section>
+<!-- Quiz Section -->
+<section id="quiz" class="quiz">
+    <div class="container">
+
+    <h2>Test Your Knowledge with the Vegetable Quiz!</h2><br>
+    <div id="quizContainer">
+        <p id="questionText"></p><br>
+        <div id="options"></div><br>
+        <center><button id="nextQuestionBtn">Next Question</button></center>
+        <p id="resultText"></p>
+    </div>
+    </div>
+</section>
+    <center><br><br><h1>Random Joke Generator</h1></center><br>
+    <div id="jokeContainer">
+        <center><p id="joke">Click the button to get a joke!</p></center><br>
+    </div>
+    <center><button onclick="fetchJoke()">Get a New Joke</button></center>
+
+    <script src="script.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

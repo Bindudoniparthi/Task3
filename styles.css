@@ -1,0 +1,368 @@
+/* styles.css */
+
+/* Basic Reset */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:white;
+    color: #333;
+}
+
+/* Navigation Bar */
+#navbar {
+    background-color: #4CAF50;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .logo h1 {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    background-color: #45a049;
+    border-radius: 5px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+
+    .nav-links li {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .nav-links a {
+        padding: 12px;
+        display: block;
+        width: 100%;
+    }
+}
+
+#home {
+    position: relative;
+    background-image: url('https://wallpapercave.com/wp/wp4184311.jpg'); /* Replace with your image path */
+    background-size: 100%; /* Adjust to 50% of the section width */
+    background-position: center; /* Centers the image within the section */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    margin-top:20px;
+}
+/* Optional: Dark Overlay for Text Readability */
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Optional overlay */
+    z-index: 1;
+}
+
+.home-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #home {
+        padding: 60px 20px;
+        height: auto;
+        background-size: 80%; /* Adjust background image size for mobile */
+    }
+
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Quiz Section */
+/* Quiz Section Styling */
+.quiz {
+    padding: 40px;
+    text-align: center;
+    background-image: url('https://www.shutterstock.com/image-illustration/question-mark-magnifying-glass-concept-260nw-1670191855.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%; /* Makes section responsive */
+    padding-top: 100px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+/* Container Styling */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+button:hover {
+    background-color: yellowgreen;
+}
+
+/* Media Queries */
+
+/* For extra-small screens (up to 480px, mobile devices) */
+@media (max-width: 480px) {
+    .quiz {
+        padding: 20px;
+        padding-top: 50px;
+        font-size: 14px;
+    }
+    .container {
+        padding: 10px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* For small screens (up to 768px, small tablets) */
+@media (max-width: 768px) {
+    .quiz {
+        padding: 30px;
+        padding-top: 60px;
+        font-size: 16px;
+    }
+    .container {
+        padding: 15px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    button {
+        padding: 9px 18px;
+        font-size: 15px;
+    }
+}
+
+/* For medium screens (up to 1024px, tablets) */
+@media (max-width: 1024px) {
+    .quiz {
+        padding: 35px;
+        padding-top: 80px;
+        font-size: 18px;
+    }
+    .container {
+        padding: 18px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+/* For large screens (over 1024px, desktops) */
+@media (min-width: 1025px) {
+    .quiz {
+        padding: 40px;
+        padding-top: 100px;
+        font-size: 20px;
+    }
+    .container {
+        padding: 20px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+/* Menu Section */
+.menu {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.menu h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #4CAF50;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.menu-item {
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-img {
+    width: 100%;
+    height:350px ;
+    border-radius: 5px;
+    max-width: 350px;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .menu-items {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    #navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #4CAF50;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+    }
+
+    #navbar .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 12px;
+        text-align: center;
+    }
+
+    #navbar .hamburger {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 30px;
+    }
+
+    #navbar .hamburger.active + .nav-links {
+        display: flex;
+    }
+}
+
